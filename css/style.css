@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Alatsi|Carter+One|Fugaz+One&display=swap');
+
+:root {
+    font-family: 'Alatsi', sans-serif;
+    --main-color: #A9A9A9;
+    scroll-behavior: smooth;
+}
+
+/*Header*/
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header, section, footer {
+    background: #f2e0d2;
+}
+
+.header_logo img {
+    width: 100px;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+.logo_name {
+    display: block;
+    font-family: 'Fugaz One', cursive;
+    font-size: 0.8rem;
+    color:  #DEB887;
+    margin-top: 1px;
+}
+
+header nav .menu {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+}
+
+header nav .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    position: relative;
+    line-height: 1;
+}
+
+@media (min-width:600px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+    header .menu {
+        flex: 1;
+    }
+}
+
+.menu ul {
+    list-style: none;
+} 
+
+a:hover::after, a:focus::after {
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f2e0d2;
+    min-width: 315px;
+    /*z-index: 1;*/
+}
+
+.dropdown-content a {
+    color: #551A8B;
+    display: block;
+    justify-content: space-around;
+    font-size: 1rem;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header .banner {
+    background-image: url(../img/queendesign.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .banner h1 {
+    font-size: 3rem;
+    font-family: 'Fugaz One', cursive;
+    color:  #f2e0d2;
+}
+
+section .dress_catalog .salon_card img {
+    width: 100%;
+    display: block;
+}
+
+.salon_card  .buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 500px) {
+    .dress_catalog {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .dress_catalog {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .dress_catalog {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color:#551A8B;
+    text-align: center;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+button:hover {
+    color: #551A8B;
+    background-color: #f2e0d2;
+    cursor: pointer;
+}
+
+.card_button {
+    border-color: #551A8B;
+    color: #551A8B;
+}
+
+.card_button:hover {
+    background-color: #ADD8E6; 
+    color: #551A8B;
+}
+
+section .dresses_wedding {
+    background-image: url(../img/queengirls.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dress h2  {
+    font-size: 2rem;
+    font-family: 'Fugaz One', cursive;
+    color:  #551A8B;
+}
+
+section .dresses_evening {
+    background-image: url(../img/dress.jpg);
+    background-image: url(../img/dress-long.light-gray.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+    /*display: flex;*/
+    /*align-items: center;*/
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+section .veils_catalog .salon_card img {
+    width: 100%;
+    display: block;
+}
+
+@media (min-width: 500px) {
+    .veils_catalog {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .veils_catalog {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .veils_catalog {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+footer .logo-footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer .logo-footer p {
+    color: #2b2727;
+    font-family: CormorantGaramond-Medium;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+
