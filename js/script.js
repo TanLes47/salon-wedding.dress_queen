@@ -22,25 +22,3 @@ const list = document.querySelector('.list_item');
 const input = document.querySelector('input');
 const button = document.querySelector('button');
 
-button.addEventListener('click', btnClick );
-
-const btnClick = function(e) {
-        e.preventDefault();
-        let item = input.value;
-        input.value = '';
-
-        const listItem = document.createElement('li');
-        const listText = document.createElement('span');
-        const listBtn = document.createElement('button');
-
-        listItem.appendChild(listText);
-        listText.textContent = item;
-        listItem.appendChild(listBtn);
-        listBtn.textContent = 'Delete';
-        list.appendChild(listItem);
-
-        listBtn.btnClick = function(e) {
-            list.removeChild(listItem);
-        }
-        input.focus();
-    }
