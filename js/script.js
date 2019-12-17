@@ -24,8 +24,9 @@ const button = document.querySelector('button');
 
 button.addEventListener('click', btnClick );
 
-const btnClick = function() {
-        let Item = input.value;
+const btnClick = function(e) {
+        e.preventDefault();
+        let item = input.value;
         input.value = '';
 
         const listItem = document.createElement('li');
@@ -33,7 +34,7 @@ const btnClick = function() {
         const listBtn = document.createElement('button');
 
         listItem.appendChild(listText);
-        listText.textContent = Item;
+        listText.textContent = item;
         listItem.appendChild(listBtn);
         listBtn.textContent = 'Delete';
         list.appendChild(listItem);
