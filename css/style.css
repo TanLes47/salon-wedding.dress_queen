@@ -6,13 +6,12 @@
     scroll-behavior: smooth;
 }
 
-/*Header*/
 body {
     max-width: 980px;
     margin: auto;
 }
 
-header, section, footer {
+header, main, footer {
     background: #f2e0d2;
 }
 
@@ -43,6 +42,8 @@ header nav .menu a {
     padding: 5px;
     position: relative;
     line-height: 1;
+    color: #C0C0C0;
+    font-size: 1.75rem;
 }
 
 @media (min-width:600px) {
@@ -73,11 +74,10 @@ a:hover::after, a:focus::after {
     position: absolute;
     background-color: #f2e0d2;
     min-width: 315px;
-    /*z-index: 1;*/
 }
 
 .dropdown-content a {
-    color: #551A8B;
+    color: #C0C0C0;
     display: block;
     justify-content: space-around;
     font-size: 1rem;
@@ -151,7 +151,7 @@ button {
     color:#551A8B;
     text-align: center;
     transition: all 0.3s;
-    background-color: transparent;
+    /*background-color: transparent;*/
 }
 
 button:hover {
@@ -181,25 +181,37 @@ section .dresses_wedding {
     flex-direction: column;
 }
 
-.dress h2  {
-    font-size: 2rem;
+section h2 {
+    font-size: 3rem;
     font-family: 'Fugaz One', cursive;
-    color:  #551A8B;
+    color:  #C0C0C0;
+    text-align: center;
+    /*margin-top: 20px;*/
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+h3 {
+    color: #C0C0C0;
+    font-size: 2rem;
+}
+
+section, footer p {
+    font-size: 1.5rem;
+    font-family: 'Alatsi', sans-serif;
+    color: #C0C0C0;
 }
 
 section .dresses_evening {
-    background-image: url(../img/dress.jpg);
     background-image: url(../img/dress-long.light-gray.jpg);
     background-position: center;
     background-size: cover;
     min-height: 450px;
-    /*display: flex;*/
-    /*align-items: center;*/
+    display: flex;
     justify-content: center;
     flex-direction: column;
 }
-
-
 
 section .veils_catalog .salon_card img {
     width: 100%;
@@ -226,19 +238,196 @@ section .veils_catalog .salon_card img {
     }
 }
 
+#veil {
+    display: block;
+    text-align: center;
+}
+
+section .our_services {
+    font-size: 1.5rem;
+    font-family: 'Alatsi', sans-serif;
+    color:  #C0C0C0;
+}
+
+section .choise h3 {
+    display: block;
+    text-align: center;
+}
+
+section .img-right {
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section .img-right img {
+    width: 100%;
+    display: block;
+}
+
+footer h2 {
+    font-size: 3rem;
+    font-family: 'Fugaz One', cursive;
+    color:  #C0C0C0;
+    text-align: center;
+}
+
+footer form label {
+    font-size: 1.5rem;
+    font-family: 'Alatsi', sans-serif;
+    color:  #C0C0C0;
+    text-align: center;
+}
+
+.footer-contact form input {
+    background: #fff1f2;
+    border: 1px solid #c5c5c5;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-left: 85px;
+    padding-left: 15px;
+    width: 370px;
+}
+
+.footer-contact h4 {
+    color: #C0C0C0;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-family: 'Alatsi', sans-serif;
+    font-weight: 300;
+    margin-bottom: 35px;
+    margin-left: 130px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.block-btn {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.block-btn .form-btn {
+    border: inherit;
+    color: #551A8B;
+    font-family: 'Alatsi', sans-serif;
+    height: 40px;
+    margin: 40px auto 20px;
+    text-align: center;
+    width: 230px;
+}
+
+.block-btn .hvr-shutter-in-vertical {
+    background: #fff1f2;
+    position: relative;
+    transform: perspective(1px) translateZ(0);
+    transition-property: var(--main-color);
+}
+
+footer .footer-contact {
+    background-color: rgba(226, 209, 196, .5);
+}
+
+footer section #our contact {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 footer .logo-footer {
     margin: 0 auto;
     text-align: center;
 }
 
+.logo-footer img {
+    width: 100px;
+    height: 100px;
+}
+
 footer .logo-footer p {
-    color: #2b2727;
-    font-family: CormorantGaramond-Medium;
+    color: #C0C0C0;
+    font-family: 'Fugaz One', cursive;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     margin-top: 20px;
 }
+
+footer .social-icon .item:last-child {
+    margin-right: 0;
+}
+
+footer .social-icon .item {
+    background: #fff;
+    border-radius: 50%;
+    height: 35px;
+    margin-right: 15px;
+    position: relative;
+    width: 35px;
+}
+
+footer .social-icon img {
+    width: 35px;
+    height: 35px;
+}
+
+footer .social-icon {
+    display: flex;
+    margin: 0 auto 45px;
+    width: 140px;
+}
+
+footer .footer-info .item {
+    color: #C0C0C0;
+    padding-top: 20px;
+
+}
+
+@media (min-width: 500px) {
+    #our_contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    #our_contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    #our_contact {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.footer-down span {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Alatsi', sans-serif;
+    color: #574b4b;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.footer-down {
+    background-color: rgba(226, 209, 196, .5);
+}
+
+
+
+
+
+
 
 
 
